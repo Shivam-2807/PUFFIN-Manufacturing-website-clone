@@ -1,0 +1,100 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body {
+    height: 100%;
+    width: 100%;
+}
+header {
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px 30px;
+    align-items: center;
+    background-color: rgb(110, 94, 94);
+    display: flex;
+}
+.Left-Header {
+    color: rgb(244, 244, 244);
+    align-items: center;
+    display: flex;
+}
+.Left-Header img {
+    height: 50px;
+    width: 50px;
+}
+.Right-Header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    color: aliceblue;
+}
+.Right-Header a {
+    gap: 20px;
+    color: aliceblue;
+    text-decoration: none;
+}
+.Right-Header button {
+    font-size: 17px;
+    width: 150px;
+    height: 40px;
+    border-radius: 8%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+}
+main {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.main-content {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    animation: slide 9s infinite;
+}
+.hero{
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.slider{
+    display: flex;
+    width: 300%;
+    height: 100%;
+    animation: slide 9s infinite;
+}
+
+.slide{
+    width: 100vw;
+    height: 100vh;
+    flex-shrink: 0;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes slide{
+    0%,30%{
+        transform: translateX(0);
+    }
+
+    33%,63%{
+        transform: translateX(-100vw);
+    }
+
+    66%,96%{
+        transform: translateX(-200vw);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
